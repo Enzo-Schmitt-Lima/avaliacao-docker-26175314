@@ -67,7 +67,15 @@ r:No -p o formato é host:container. -p 7042:80 liga a porta 7042 do host à por
 
 7. Escreva os dois comandos `docker run` que fariam o mesmo que o seu `docker-compose.yml`.
 
+r: docker run -d --name portal -p 8014:80 --restart unless-stopped enzoschmittlima/viaserra-portal:1.0-26175314
+docker build -t manutencao:26175314 ./manutencao
+docker run -d --name manutencao -p 7014:80 --restart unless-stopped manutencao:26175314
+O serviço de manutenção usa build no compose. Por isso, sem compose, é preciso construir a imagem com docker build antes do docker run.
+
 8. Qual comando derruba os dois containers de uma vez?
+
+r: docker compose down
+Esse comando para e remove os dois containers de uma vez.
 
 ## Verificador
 
