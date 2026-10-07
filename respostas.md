@@ -82,5 +82,30 @@ Esse comando para e remove os dois containers de uma vez.
 9. Código de conclusão impresso pelo verificador:
 
 ```
-(cole aqui)
+================================================================
+ Verificador · Avaliação Prática de Docker · Turma C
+================================================================
+ Matrícula 26175314 · portal 8014 · manutenção 7014
+
+A. Arquivos e Git
+[ OK ] A1 portal/Dockerfile segue os requisitos
+[ OK ] A2 .env fora do Git e .env.example versionado
+[ OK ] A3 4+ commits e remoto no GitHub (encontrados: 4)
+[ OK ] A4 imagem enzoschmittlima/viaserra-portal:1.0-26175314 pública no Docker Hub
+
+B. docker compose
+         (ainda há lacunas ____ no docker-compose.yml)
+[ OK ] B1 serviços portal e manutencao em execução
+[ OK ] B2 portal roda a imagem publicada
+[ OK ] B3 portas: portal em 8014 e manutenção em 7014
+
+C. Conteúdo
+[ OK ] C1 portal mostra seu nome e sua matrícula
+[ OK ] C2 página de manutenção servindo o aviso "Voltamos em breve"
+
+================================================================
+ Resultado: 9/9 verificações
+ Código de conclusão: VIASERRA-26175314-2DEC1056
+ Copie o código para o respostas.md, tire o print desta tela e faça o commit final.
+================================================================
 ```
